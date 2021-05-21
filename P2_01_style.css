@@ -1,0 +1,713 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'Raleway-bold';
+    src: url('font/Raleway-Bold.ttf');
+    src: url('font/Raleway-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('font/Raleway-Light.ttf');
+    src: url('font/Raleway-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Eléments principaux de la page */
+
+body
+{
+    width: 60%;
+    margin: auto;
+    font-family: 'Raleway';
+    letter-spacing:0.5px;
+}
+
+/* Header */ 
+
+.logo
+{
+    height:40px;
+}
+.link
+{
+    text-decoration: none;
+    color:black;
+    font-size: 0.8rem;
+    border-top: 2px solid #FFF;  
+    padding: 30px;
+    margin:0;
+}
+.link:hover, .inscription:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+.inscription
+{
+    text-decoration: none;
+    font-family: 'Raleway-Bold';
+    color: #0065FC;
+    font-size: 0.8rem;
+    border-top: 2px solid #FFF;  
+    padding: 30px;
+    margin:0;
+}
+.header
+{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.navigation
+{
+    display:flex;
+    justify-content: right;
+}
+
+/* titre et phrase d'accroche */
+
+.titre
+{
+    font-family: 'Raleway-Bold';
+    margin:0px 0px 10px 0px;
+    font-size: 1rem;
+}
+.phraseaccroche
+{
+    margin:0;
+    font-size: 0.75rem;
+}
+
+/* formulaire */
+
+.formulaire
+{
+    margin: 15px 0px 15px 0px;
+}
+.fa-map-marker-alt
+{
+    color: black;
+    position: absolute;
+    width: 10px;
+    margin: 10px 0px 0px 15px;
+}
+input[type=text] 
+{
+    padding: 10px;
+    font-family: 'Raleway-bold';
+    border: 1px solid #F2F2F2;
+    border-left: 40px solid #F2F2F2;
+    border-radius: 12px 0px 0px 12px; 
+}
+.rechercher
+{
+    padding: 10px;
+    border: 1px solid #0065FC; 
+    font-family: 'Raleway-bold';
+    background-color: #0065FC;
+    color : white;
+    border-radius: 0px 12px 12px 0px; 
+    transition: all 0.3s ease;
+    margin-left: -5px;
+}
+.rechercher:hover
+{
+    background-color: white;
+    color: #0065FC;
+}
+
+/* filtres */
+
+.filtres
+{
+    display: flex;
+    align-items: center;
+}
+.title_filtres
+{
+    font-family: 'Raleway-Bold';
+    font-size: 0.9rem;
+}
+.texte_filtres
+{
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 13px;
+    font-family: 'Raleway-Bold';
+}
+.filtres ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    white-space: nowrap;
+}
+.filtres li
+{
+    margin: 10px;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+}
+.filtres a
+{
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.fondbleu
+{
+    background-color: #DEEBFF;
+    border-radius: 40px;
+    height: 45px;
+    width: 45px;
+}
+.fa-dog, .fa-heart, .fa-child, .fa-money-bill-wave
+{
+    color: #0065FC;
+    margin: 13px;
+}
+.filtres a:hover
+{
+    background-color: #0065FC;
+    border-radius: 30px;
+    color:white;
+    box-shadow: 0px 0px 2px #0065FC;
+}
+
+/* information */
+
+.fondinfo
+{
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    height: 22px;
+    width: 22px;
+}
+.fa-info
+{
+    font-size: 0.6rem;
+    color: #0065FC;
+    position: absolute;
+    margin-left: 10px;
+}
+.ligneinfo 
+{
+    margin: 20px 0px 30px 0px;
+    display: flex;
+    align-items: center;
+}
+.phraseinfo
+{
+    font-size: 0.8rem;
+    margin:0;
+    margin-left:8px;
+}
+
+/* panneaux gris */
+
+.panels_grey
+{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    height: 500px;
+}
+
+/* hébergement */
+
+.hebergement
+{
+    background-color: #F2F2F2;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    border-radius: 20px;
+    margin-right: 2rem;
+    width: 60%;
+    padding: 2rem;
+}
+.title_hebergement
+{
+    font-family: "Raleway-bold";
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Petites cartes blanches - hébergement */
+
+.panels_white_hebergement
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.card_hebergement
+{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    margin-bottom:1.5rem;
+}
+.card_picture_hebergement
+{
+    overflow: hidden;
+    height: 60%;
+    border-radius: 10px 10px 0px 0px;
+}
+.photo
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card_link_hebergement
+{
+    text-decoration: none;
+}
+.card_description_hebergement
+{
+    line-height: 1rem;
+    padding:8px;
+}
+.card_title_hebergement
+{
+    margin:0;
+    color: black;
+    font-family: "Raleway-bold";
+    font-size: 0.8rem;
+}
+.card_price_hebergement
+{
+    margin:0;
+    color:black;
+    font-size: 0.7rem;
+}
+.stars
+{
+    font-size: 0.6rem;
+}
+
+
+/* Afficher plus */
+
+.link_more
+{
+    text-decoration: none;
+}
+.more
+{
+    margin: 0;
+    color: black;
+    font-size: 0.8em;
+}
+.more:hover
+{
+    color: #0065FC;
+}
+
+/* populaire */
+
+.populaire
+{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    flex: 1;
+    padding: 2rem;
+}
+.title_populaire
+{
+    font-family: "Raleway-bold";
+    margin: 0;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.fa-chart-line
+{
+    height:15px;
+    margin-left: 110px;
+}
+
+/* Petites cartes blanches - populaire */
+
+.panels_white_populaire
+{
+    display:flex;
+    flex-wrap: wrap;
+}
+.card_populaire
+{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    max-width: 300px;
+    max-height: 110px; /* photo qui dépasse ici si on retrécie le height */
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    margin-bottom: 2rem;
+}
+.card_picture_populaire
+{
+    overflow: hidden;
+    width: 35%;
+    border-radius: 10px 0px 0px 10px;
+}
+.photo2
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card_link_populaire
+{
+    text-decoration: none;
+    display: flex;
+}
+.card_description_populaire
+{
+    line-height: 1rem;
+    padding:8px;
+}
+.card_title_populaire
+{
+    margin:0;
+    color: black;
+    font-family: "Raleway-bold";
+    font-size: 0.8rem;
+}
+.card_price_populaire
+{
+    margin:0;
+    color:black;
+    font-size: 0.7rem;
+    padding-bottom: 25px;
+}
+.stars
+{
+    font-size: 0.6rem;
+}
+
+
+/* activités */
+
+.title_activites
+{
+    font-size: 1rem;
+    font-family: "Raleway-bold";
+}
+.activites
+{
+    height: 440px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.card_vieuxport, .card_pomegues, .card_frioul, .card_calanques, .card_garde, .card_longchamp
+{
+    border: 3px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px lightgrey;
+}
+.card_third_picture_activites
+{
+    overflow: hidden;
+    height: 85%;
+    border-radius: 10px 10px 0px 0px; 
+}
+.card_one_picture_activites
+{
+    overflow: hidden;
+    height: 75%;
+    border-radius: 10px 10px 0px 0px; 
+}
+.card_middle_picture_activites
+{
+    overflow: hidden;
+    height: 80%;
+    border-radius: 10px 10px 0px 0px; 
+}
+.card_all_picture_activites
+{
+    overflow: hidden;
+    height: 90%;
+    border-radius: 10px 10px 0px 0px; 
+}
+.photo3
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card_vieuxport
+{
+    height: 400px;
+    grid-column: 1;
+    grid-row: 1 / span 4;
+}
+.card_pomegues
+{
+    height: 220px;
+    grid-column: 2;
+    grid-row: 1 / span 3;
+}
+.card_frioul
+{
+    height: 140px;
+    grid-column: 2;
+    grid-row: 3/span 1;
+}
+.card_calanques
+{
+    height: 400px;
+    grid-column: 3;
+    grid-row: 1 / span 4;
+}
+.card_garde
+{
+    height: 180px;
+    grid-column: 4;
+    grid-row:1 / span 1;
+}
+.card_longchamp
+{
+    height: 180px;
+    grid-column: 4;
+    grid-row:2 / span 3;
+}
+.card_link_activites
+{
+    text-decoration: none;
+}
+.card_description_activites
+{
+    padding:12px
+}
+.card_title_activites
+{
+    margin:0;
+    color: black;
+    font-size: 0.8rem;
+    font-family:"Raleway-bold"
+}
+
+/*footer */
+
+footer
+{
+    background-color: #F2F2F2;
+    display: flex;
+}
+.apropos, .Hebergements, .assistance
+{
+    width: 30%;
+    margin: 30px;
+}
+.footer_link
+{
+    text-decoration: none;
+    color: black;
+}
+.footer_title
+{
+    font-size: 0.8rem;  
+}
+.footer_text
+{
+    font-size: 0.8rem;;
+}
+.footer_link:hover
+{
+    text-decoration: none;
+    color: #0065FC;
+}
+
+
+@media all and (max-width: 1280px)
+{
+    .filtres ul
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+} 
+
+@media all and (max-device-width: 480px)
+{
+    body
+    {
+    width: 100%;
+    }
+
+    /* Header iPhone */
+
+    .logo
+    {
+    position:absolute;
+    top:0;
+    padding: 15px;
+    }
+    .inscription
+    {
+    padding: 25px;
+    }
+    .navigation
+    {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-content: flex-end;
+    }
+    .link
+    {
+    flex:1;
+    font-size: 0.8rem;
+    border-bottom: 2px solid #F2F2F2;
+    padding: 10px 10px 10px 55px;
+    margin: 0;
+    }
+    .link:hover
+    {
+    color: #0065FC;
+    border-top: 2px solid #FFF;
+    border-bottom: 2px solid #0065FC;
+    }
+
+    /* under_header iPhone */
+
+    .under_header
+    {
+    padding: 15px;
+    }
+    .titre
+    {
+    font-size: 1.3rem;
+    }
+    .phraseaccroche, .phraseinfo
+    {
+    font-size: 0.9rem;
+    }
+
+    /* formulaire iPhone */
+
+    .rechercher
+    {
+    padding: 10px;
+    border: 1px solid #0065FC; 
+    background-color: #0065FC;
+    color : white;
+    border-radius: 12px 12px 12px 12px; 
+    transition: all 0.3s ease;
+    margin-left: -5px;
+    }
+    .rechercher:hover
+    {
+    background-color: white;
+    color: #0065FC;
+    }
+
+
+    /* filtres iPhone */
+
+    .filtres
+    {
+    display:block;
+    }
+    .filtres ul
+    {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    }
+    .filtres li
+    {
+    margin: 0px 10px 10px 0px;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    }
+    .panels_grey
+    {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    height: 1650px;
+    }
+
+    /* populaire iPhone */
+
+    .populaire
+    {
+    border-radius: 0px;
+    padding: 1rem;
+    }
+    .fa-chart-line
+    {
+    margin-left: 150px;
+    }
+    .card_populaire
+    {
+    margin-bottom: 1rem;
+    max-width: 330px;
+    }
+
+    /* hébergements iPhone */
+
+    .hebergement 
+    {
+    background-color: #FFF;
+    width: 100%;
+    padding: 1rem;
+    }
+    .title_hebergement
+    {
+    margin-bottom: 1rem;
+    }
+    .card_hebergement 
+    {
+    max-width: 330px;
+    }
+
+    /* activités iPhone */
+
+    .activites
+    {
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    }
+    .title_activites
+    {
+    margin: 10px;
+    }
+    .card_vieuxport, .card_pomegues, .card_frioul, .card_calanques, .card_garde, .card_longchamp
+    {
+    height: 180px;
+    }
+    .card_one_picture_activites, .card_middle_picture_activites, .card_third_picture_activites, .card_all_picture_activites
+    {
+    height: 80%;
+    }
+
+    /* footer iPhone */
+
+    footer
+    {
+    display: flex;
+    flex-direction: column;
+    }
+    .apropos, .Hebergements, .assistance
+    {
+        width: 100%;
+        margin: 20px;
+    }
+}
